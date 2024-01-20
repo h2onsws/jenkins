@@ -6,6 +6,11 @@ pipeline {
                 echo 'Build the code' 
             }
         }
+        stage('validate') {
+            steps {
+                echo 'Validate the code' 
+            }
+        }
         stage('test') {
             steps {
                 echo 'Test the code' 
